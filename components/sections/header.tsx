@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo.svg"
+              src="/icon.svg"
               alt="Koda Labs"
               width={36}
               height={36}

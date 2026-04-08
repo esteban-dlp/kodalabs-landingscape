@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Construye. Automatiza. Simplifica.",
+    "headline": "Software que elimina la fricción",
+    "description": "Convertimos procesos complejos en sistemas simples. Koda Labs construye software, automatización y herramientas digitales que ayudan a personas y empresas a simplificar flujos de trabajo, ahorrar tiempo y escalar con mejores sistemas.",
+    "cta": "Iniciar Proyecto",
+    "secondaryCta": "Conocer Más"
+  },
+  "whatWeDo": {
+    "label": "Lo Que Hacemos",
+    "headline": "Construyendo sistemas más inteligentes para el trabajo moderno",
+    "description": "Creamos soluciones tecnológicas que eliminan la fricción de los flujos de trabajo y convierten procesos complejos en sistemas elegantes y escalables. Desde software personalizado hasta automatización con IA, construimos herramientas que resuelven problemas reales."
+  },
+  "services": {
+    "label": "Servicios",
+    "headline": "Soluciones que escalan con tu negocio",
+    "items": {
+      "saas": {
+        "title": "Productos SaaS",
+        "description": "Plataformas de software como servicio personalizadas, construidas para escalabilidad, confiabilidad y experiencia de usuario excepcional."
+      },
+      "automation": {
+        "title": "Sistemas de Automatización",
+        "description": "Elimina tareas repetitivas y optimiza operaciones con automatización inteligente que ahorra tiempo y reduce errores."
+      },
+      "ai": {
+        "title": "Soluciones con IA",
+        "description": "Aprovecha la inteligencia artificial para mejorar la toma de decisiones, automatizar procesos complejos y desbloquear nuevas posibilidades."
+      },
+      "apps": {
+        "title": "Aplicaciones Personalizadas",
+        "description": "Aplicaciones diseñadas específicamente para resolver tus desafíos particulares e integrarse perfectamente con tu flujo de trabajo."
+      },
+      "platforms": {
+        "title": "Plataformas Empresariales",
+        "description": "Plataformas digitales integrales que centralizan operaciones, mejoran la colaboración e impulsan la eficiencia."
+      }
+    }
+  },
+  "why": {
+    "label": "Por Qué Koda Labs",
+    "headline": "Tecnología práctica para problemas reales",
+    "items": {
+      "problemSolving": {
+        "title": "Enfoque en el Problema",
+        "description": "Comenzamos con tus desafíos, no con nuestras suposiciones. Cada solución está diseñada en torno a los problemas específicos que necesitas resolver."
+      },
+      "scalable": {
+        "title": "Tecnología Escalable",
+        "description": "Construido sobre bases modernas y robustas que crecen con tu negocio sin requerir reconstrucciones completas."
+      },
+      "simplicity": {
+        "title": "Simplicidad por Diseño",
+        "description": "Los problemas complejos merecen soluciones elegantes. Eliminamos la complejidad innecesaria para entregar sistemas potentes pero intuitivos."
+      },
+      "efficiency": {
+        "title": "Sistemas que Ahorran Tiempo",
+        "description": "Cada solución que construimos está diseñada para devolverte tiempo, permitiéndote enfocarte en lo que más importa."
+      }
+    }
+  },
+  "process": {
+    "label": "Nuestro Proceso",
+    "headline": "Del problema a la solución",
+    "steps": {
+      "understand": {
+        "number": "01",
+        "title": "Entender",
+        "description": "Profundizamos en tus flujos de trabajo, desafíos y objetivos para entender completamente el problema antes de proponer soluciones."
+      },
+      "design": {
+        "number": "02",
+        "title": "Diseñar",
+        "description": "Arquitectamos una solución que aborda tus necesidades específicas mientras permanece lo suficientemente flexible para evolucionar con tu negocio."
+      },
+      "build": {
+        "number": "03",
+        "title": "Construir",
+        "description": "Desarrollamos tu solución usando tecnologías modernas y mejores prácticas, con transparencia en cada paso."
+      },
+      "improve": {
+        "number": "04",
+        "title": "Mejorar y Escalar",
+        "description": "Refinamos y optimizamos continuamente tus sistemas basándonos en el uso real y tus necesidades en evolución."
+      }
+    }
+  },
+  "vision": {
+    "label": "Nuestra Visión",
+    "headline": "Más allá de soluciones personalizadas",
+    "description": "Koda Labs está evolucionando de construir soluciones personalizadas a crear nuestros propios productos y plataformas. Estamos construyendo herramientas que resuelven problemas comunes de manera elegante, haciendo que la tecnología poderosa sea accesible para más empresas y personas."
+  },
+  "cta": {
+    "headline": "¿Listo para simplificar tu trabajo?",
+    "description": "Hablemos sobre cómo podemos ayudarte a automatizar, optimizar y escalar con la tecnología adecuada.",
+    "button": "Iniciar la Conversación"
+  },
+  "footer": {
+    "tagline": "Tecnología práctica para problemas reales.",
+    "copyright": "Todos los derechos reservados.",
+    "navigation": "Navegación",
+    "connect": "Conectar"
+  }
+}

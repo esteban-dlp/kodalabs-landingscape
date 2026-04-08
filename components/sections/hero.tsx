@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 lg:pt-24 overflow-hidden">
       {/* Subtle grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:64px_64px] opacity-40" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4c4c4c_1px,transparent_1px),linear-gradient(to_bottom,#4c4c4c_1px,transparent_1px)] bg-[size:64px_64px] opacity-40" />
       
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />

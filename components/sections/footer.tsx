@@ -9,9 +9,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const navLinks = [
-    { href: "#services", label: t("nav.services") },
+    { href: "#perfect-for", label: t("nav.perfectFor") },
     { href: "#process", label: t("nav.process") },
-    { href: "#about", label: t("nav.about") },
+    { href: "#pricing", label: t("nav.pricing") },
     { href: "#contact", label: t("nav.contact") },
   ]
 
@@ -27,7 +27,7 @@ export function Footer() {
                 alt="Koda Labs"
                 width={32}
                 height={32}
-                className="w-8 h-8"
+                className="w-8 h-8 drop-shadow-md"
               />
               <span className="font-semibold text-lg text-foreground">
                 Koda Labs

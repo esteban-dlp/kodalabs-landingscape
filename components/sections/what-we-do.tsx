@@ -2,13 +2,14 @@
 
 import { useI18n } from "@/lib/i18n"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { StatsVisualization } from "@/components/ui/product-visuals"
 
 export function WhatWeDo() {
   const { t } = useI18n()
   const { ref, isVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.2 })
 
   return (
-    <section id="about" className="py-24 lg:py-32 border-t border-border">
+    <section id="what-we-do" className="py-24 lg:py-32 border-t border-border">
       <div 
         ref={ref}
         className={`max-w-7xl mx-auto px-6 lg:px-8 transition-all duration-1000 ease-out ${
@@ -26,11 +27,16 @@ export function WhatWeDo() {
             </h2>
           </div>
 
-          {/* Right Column - Description */}
-          <div>
+          {/* Right Column - Description and Visual */}
+          <div className="space-y-8">
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
               {t("whatWeDo.description")}
             </p>
+            
+            {/* Stats Visualization */}
+            <div className="max-w-sm">
+              <StatsVisualization />
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import { Header } from "@/components/sections/header"
 import { Hero } from "@/components/sections/hero"
 import { WhatWeDo } from "@/components/sections/what-we-do"
-import { Services } from "@/components/sections/services"
-import { WhyKodaLabs } from "@/components/sections/why-koda-labs"
+import { PerfectFor } from "@/components/sections/perfect-for"
 import { Process } from "@/components/sections/process"
-import { Vision } from "@/components/sections/vision"
+import { Pricing } from "@/components/sections/pricing"
+import { AddOns } from "@/components/sections/add-ons"
+import { FAQ } from "@/components/sections/faq"
 import { CTA } from "@/components/sections/cta"
 import { Footer } from "@/components/sections/footer"
 
@@ -15,10 +16,11 @@ export default function HomePage() {
       <main>
         <Hero />
         <WhatWeDo />
-        <Services />
-        <WhyKodaLabs />
+        <PerfectFor />
         <Process />
-        <Vision />
+        <Pricing />
+        <AddOns />
+        <FAQ />
         <CTA />
       </main>
       <Footer />

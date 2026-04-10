@@ -1,108 +1,189 @@
 {
   "nav": {
-    "services": "Servicios",
-    "process": "Proceso",
-    "about": "Nosotros",
-    "contact": "Contacto"
+    "perfectFor": "Para Quién",
+    "process": "Cómo Funciona",
+    "pricing": "Precios",
+    "contact": "Comenzar"
   },
   "hero": {
-    "tagline": "Construye. Automatiza. Simplifica.",
-    "headline": "Software que elimina la fricción",
-    "description": "Convertimos procesos complejos en sistemas simples. Koda Labs construye software, automatización y herramientas digitales que ayudan a personas y empresas a simplificar flujos de trabajo, ahorrar tiempo y escalar con mejores sistemas.",
-    "cta": "Iniciar Proyecto",
-    "secondaryCta": "Conocer Más"
+    "tagline": "Landing Pages para Negocios Locales",
+    "headline": "Lanza tu landing page en",
+    "headlineAccent": "horas, no semanas",
+    "description": "Landing pages modernas diseñadas para convertir visitantes en clientes. Pon tu negocio en línea rápidamente con una página profesional que se ve genial en cualquier dispositivo.",
+    "cta": "Ver Precios",
+    "secondaryCta": "Cómo Funciona"
   },
   "whatWeDo": {
     "label": "Lo Que Hacemos",
-    "headline": "Construyendo sistemas más inteligentes para el trabajo moderno",
-    "description": "Creamos soluciones tecnológicas que eliminan la fricción de los flujos de trabajo y convierten procesos complejos en sistemas elegantes y escalables. Desde software personalizado hasta automatización con IA, construimos herramientas que resuelven problemas reales."
+    "headline": "Landing pages profesionales, entregadas rápido",
+    "description": "Construimos landing pages limpias y modernas para negocios que quieren verse profesionales en línea sin la complejidad del desarrollo web tradicional. Sin procesos complicados, sin largos tiempos de espera—solo una página genial que funciona."
   },
-  "services": {
-    "label": "Servicios",
-    "headline": "Soluciones que escalan con tu negocio",
+  "perfectFor": {
+    "label": "Perfecto Para",
+    "headline": "Diseñado para negocios como el tuyo",
+    "description": "Nuestras landing pages están diseñadas para negocios locales y marcas personales que necesitan una presencia profesional en línea sin la complejidad.",
     "items": {
-      "saas": {
-        "title": "Productos SaaS",
-        "description": "Plataformas de software como servicio personalizadas, construidas para escalabilidad, confiabilidad y experiencia de usuario excepcional."
+      "restaurants": {
+        "title": "Restaurantes",
+        "description": "Muestra tu menú, ubicación y horarios"
       },
-      "automation": {
-        "title": "Sistemas de Automatización",
-        "description": "Elimina tareas repetitivas y optimiza operaciones con automatización inteligente que ahorra tiempo y reduce errores."
+      "cafes": {
+        "title": "Cafeterías",
+        "description": "Destaca tu ambiente y especialidades"
       },
-      "ai": {
-        "title": "Soluciones con IA",
-        "description": "Aprovecha la inteligencia artificial para mejorar la toma de decisiones, automatizar procesos complejos y desbloquear nuevas posibilidades."
+      "barbershops": {
+        "title": "Barberías",
+        "description": "Muestra servicios e información de reservas"
       },
-      "apps": {
-        "title": "Aplicaciones Personalizadas",
-        "description": "Aplicaciones diseñadas específicamente para resolver tus desafíos particulares e integrarse perfectamente con tu flujo de trabajo."
+      "localServices": {
+        "title": "Servicios Locales",
+        "description": "Presenta tus servicios a clientes locales"
       },
-      "platforms": {
-        "title": "Plataformas Empresariales",
-        "description": "Plataformas digitales integrales que centralizan operaciones, mejoran la colaboración e impulsan la eficiencia."
-      }
-    }
-  },
-  "why": {
-    "label": "Por Qué Koda Labs",
-    "headline": "Tecnología práctica para problemas reales",
-    "items": {
-      "problemSolving": {
-        "title": "Enfoque en el Problema",
-        "description": "Comenzamos con tus desafíos, no con nuestras suposiciones. Cada solución está diseñada en torno a los problemas específicos que necesitas resolver."
+      "personalBrands": {
+        "title": "Marcas Personales",
+        "description": "Construye tu presencia profesional en línea"
       },
-      "scalable": {
-        "title": "Tecnología Escalable",
-        "description": "Construido sobre bases modernas y robustas que crecen con tu negocio sin requerir reconstrucciones completas."
-      },
-      "simplicity": {
-        "title": "Simplicidad por Diseño",
-        "description": "Los problemas complejos merecen soluciones elegantes. Eliminamos la complejidad innecesaria para entregar sistemas potentes pero intuitivos."
-      },
-      "efficiency": {
-        "title": "Sistemas que Ahorran Tiempo",
-        "description": "Cada solución que construimos está diseñada para devolverte tiempo, permitiéndote enfocarte en lo que más importa."
+      "smallBusinesses": {
+        "title": "Pequeños Negocios",
+        "description": "Ponte en línea rápida y profesionalmente"
       }
     }
   },
   "process": {
-    "label": "Nuestro Proceso",
-    "headline": "Del problema a la solución",
+    "label": "Cómo Funciona",
+    "headline": "De la idea al aire en 4 simples pasos",
     "steps": {
       "understand": {
         "number": "01",
-        "title": "Entender",
-        "description": "Profundizamos en tus flujos de trabajo, desafíos y objetivos para entender completamente el problema antes de proponer soluciones."
+        "title": "Cuéntanos de tu Negocio",
+        "description": "Comparte los detalles de tu negocio, estilo de marca, y qué quieres que hagan tus visitantes. Nosotros nos encargamos del resto."
       },
       "design": {
         "number": "02",
-        "title": "Diseñar",
-        "description": "Arquitectamos una solución que aborda tus necesidades específicas mientras permanece lo suficientemente flexible para evolucionar con tu negocio."
+        "title": "Diseñamos tu Página",
+        "description": "Nuestro equipo crea un diseño limpio y moderno que combina con tu marca y habla a tus clientes."
       },
       "build": {
         "number": "03",
-        "title": "Construir",
-        "description": "Desarrollamos tu solución usando tecnologías modernas y mejores prácticas, con transparencia en cada paso."
+        "title": "Revisa y Refina",
+        "description": "Revisas el borrador y solicitas cualquier cambio. Refinamos hasta que estés completamente satisfecho."
       },
       "improve": {
         "number": "04",
-        "title": "Mejorar y Escalar",
-        "description": "Refinamos y optimizamos continuamente tus sistemas basándonos en el uso real y tus necesidades en evolución."
+        "title": "Lanza y Publica",
+        "description": "Tu landing page sale al aire y comienza a trabajar para tu negocio inmediatamente."
       }
     }
   },
-  "vision": {
-    "label": "Nuestra Visión",
-    "headline": "Más allá de soluciones personalizadas",
-    "description": "Koda Labs está evolucionando de construir soluciones personalizadas a crear nuestros propios productos y plataformas. Estamos construyendo herramientas que resuelven problemas comunes de manera elegante, haciendo que la tecnología poderosa sea accesible para más empresas y personas."
+  "pricing": {
+    "label": "Precios",
+    "headline": "Precios simples y transparentes",
+    "description": "Elige el plan que se ajuste a tus necesidades. Todos los planes incluyen diseño responsivo y entrega rápida.",
+    "currency": {
+      "usd": "USD",
+      "gtq": "GTQ"
+    },
+    "perPage": "único pago",
+    "plans": {
+      "starter": {
+        "name": "Inicial",
+        "description": "Perfecto para negocios simples",
+        "features": [
+          "Landing page de una sección",
+          "Diseño responsivo móvil",
+          "Integración de formulario de contacto",
+          "Configuración SEO básica",
+          "Entrega en 48 horas"
+        ]
+      },
+      "business": {
+        "name": "Negocio",
+        "description": "El más popular para negocios locales",
+        "features": [
+          "Todo lo del plan Inicial",
+          "Hasta 3 secciones",
+          "Enlaces a redes sociales",
+          "Integración de Google Maps",
+          "Entrega en 24 horas"
+        ],
+        "popular": "Más Popular"
+      },
+      "pro": {
+        "name": "Profesional",
+        "description": "Para negocios que quieren más",
+        "features": [
+          "Todo lo del plan Negocio",
+          "Hasta 5 secciones",
+          "Animaciones personalizadas",
+          "Panel de analíticas",
+          "Soporte prioritario",
+          "Entrega el mismo día"
+        ]
+      }
+    },
+    "cta": "Comenzar"
+  },
+  "addons": {
+    "label": "Extras",
+    "headline": "Mejora tu landing page",
+    "description": "Extras opcionales para hacer tu página aún mejor.",
+    "items": {
+      "extraLanguage": {
+        "title": "Idioma Adicional",
+        "description": "Agrega versión en español u otro idioma"
+      },
+      "menuPdf": {
+        "title": "Integración de Menú PDF",
+        "description": "Sube y muestra tu menú como PDF"
+      },
+      "customSection": {
+        "title": "Sección Personalizada",
+        "description": "Agrega una sección adicional personalizada"
+      },
+      "seoOptimization": {
+        "title": "Optimización SEO",
+        "description": "Optimización avanzada para buscadores"
+      },
+      "analyticsSetup": {
+        "title": "Configuración de Analytics",
+        "description": "Configuración de Google Analytics"
+      }
+    },
+    "each": "c/u"
+  },
+  "faq": {
+    "label": "Preguntas Frecuentes",
+    "headline": "Preguntas comunes",
+    "items": {
+      "speed": {
+        "question": "¿Qué tan rápido puede estar lista mi landing page?",
+        "answer": "Dependiendo de tu plan, tu landing page puede estar lista en tan solo 24 horas. Nuestro plan Inicial entrega en 48 horas, Negocio en 24 horas, y Profesional ofrece entrega el mismo día."
+      },
+      "domain": {
+        "question": "¿Necesito tener un dominio?",
+        "answer": "No necesariamente. Podemos ayudarte a comprar y configurar un dominio, o podemos desplegar tu página en un subdominio si prefieres. Te guiaremos a través de las opciones."
+      },
+      "changes": {
+        "question": "¿Puedo solicitar cambios después de la entrega?",
+        "answer": "¡Sí! Todos los planes incluyen una ronda de revisiones. Si necesitas cambios adicionales después de eso, ofrecemos paquetes de actualización accesibles."
+      },
+      "languages": {
+        "question": "¿Puede mi sitio web estar en dos idiomas?",
+        "answer": "¡Por supuesto! Puedes agregar versiones en idiomas adicionales como extra. Esto es especialmente popular para negocios que atienden a clientes que hablan inglés y español."
+      },
+      "hosting": {
+        "question": "¿Ustedes hospedan el sitio web?",
+        "answer": "Sí, manejamos el hosting en servidores rápidos y confiables. Tu landing page cargará rápidamente y estará en línea 24/7. El hosting está incluido por el primer año con todos los planes."
+      }
+    }
   },
   "cta": {
-    "headline": "¿Listo para simplificar tu trabajo?",
-    "description": "Hablemos sobre cómo podemos ayudarte a automatizar, optimizar y escalar con la tecnología adecuada.",
-    "button": "Iniciar la Conversación"
+    "headline": "¿Listo para lanzar tu landing page?",
+    "description": "Pon tu negocio en línea hoy. Sin procesos complicados, sin largos tiempos de espera—solo una página profesional que convierte visitantes en clientes.",
+    "button": "Comenzar Ahora"
   },
   "footer": {
-    "tagline": "Tecnología práctica para problemas reales.",
+    "tagline": "Landing pages profesionales, entregadas rápido.",
     "copyright": "Todos los derechos reservados.",
     "navigation": "Navegación",
     "connect": "Conectar"

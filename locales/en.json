@@ -1,108 +1,189 @@
 {
   "nav": {
-    "services": "Services",
-    "process": "Process",
-    "about": "About",
-    "contact": "Contact"
+    "perfectFor": "Who It's For",
+    "process": "How It Works",
+    "pricing": "Pricing",
+    "contact": "Get Started"
   },
   "hero": {
-    "tagline": "Build. Automate. Simplify.",
-    "headline": "Software that removes friction",
-    "description": "We turn complex processes into simple systems. Koda Labs builds software, automation, and digital tools that help people and businesses simplify workflows, save time, and scale with better systems.",
-    "cta": "Start a Project",
-    "secondaryCta": "Learn More"
+    "tagline": "Landing Pages for Local Businesses",
+    "headline": "Launch your landing page in",
+    "headlineAccent": "hours, not weeks",
+    "description": "Modern landing pages designed to convert visitors into clients. Get your business online fast with a professional page that looks great on any device.",
+    "cta": "See Pricing",
+    "secondaryCta": "How It Works"
   },
   "whatWeDo": {
     "label": "What We Do",
-    "headline": "Building smarter systems for modern work",
-    "description": "We create technology solutions that remove friction from workflows and turn complex processes into elegant, scalable systems. From custom software to AI-powered automation, we build tools that solve real problems."
+    "headline": "Professional landing pages, delivered fast",
+    "description": "We build clean, modern landing pages for businesses that want to look professional online without the hassle of traditional web development. No complicated processes, no long wait times—just a great page that works."
   },
-  "services": {
-    "label": "Services",
-    "headline": "Solutions that scale with your business",
+  "perfectFor": {
+    "label": "Perfect For",
+    "headline": "Built for businesses like yours",
+    "description": "Our landing pages are designed for local businesses and personal brands that need a professional online presence without the complexity.",
     "items": {
-      "saas": {
-        "title": "SaaS Products",
-        "description": "Custom software-as-a-service platforms built for scalability, reliability, and exceptional user experience."
+      "restaurants": {
+        "title": "Restaurants",
+        "description": "Showcase your menu, location, and hours"
       },
-      "automation": {
-        "title": "Automation Systems",
-        "description": "Eliminate repetitive tasks and streamline operations with intelligent automation that saves time and reduces errors."
+      "cafes": {
+        "title": "Cafés",
+        "description": "Highlight your atmosphere and specialties"
       },
-      "ai": {
-        "title": "AI-Powered Solutions",
-        "description": "Leverage artificial intelligence to enhance decision-making, automate complex processes, and unlock new possibilities."
+      "barbershops": {
+        "title": "Barbershops",
+        "description": "Display services and booking info"
       },
-      "apps": {
-        "title": "Custom Applications",
-        "description": "Purpose-built applications designed to solve your specific challenges and integrate seamlessly with your workflow."
+      "localServices": {
+        "title": "Local Services",
+        "description": "Present your services to local customers"
       },
-      "platforms": {
-        "title": "Business Platforms",
-        "description": "Comprehensive digital platforms that centralize operations, improve collaboration, and drive efficiency."
-      }
-    }
-  },
-  "why": {
-    "label": "Why Koda Labs",
-    "headline": "Practical technology for real problems",
-    "items": {
-      "problemSolving": {
-        "title": "Problem-First Approach",
-        "description": "We start with your challenges, not our assumptions. Every solution is designed around the specific problems you need to solve."
+      "personalBrands": {
+        "title": "Personal Brands",
+        "description": "Build your professional online presence"
       },
-      "scalable": {
-        "title": "Scalable Technology",
-        "description": "Built on modern, robust foundations that grow with your business without requiring complete rebuilds."
-      },
-      "simplicity": {
-        "title": "Simplicity by Design",
-        "description": "Complex problems deserve elegant solutions. We eliminate unnecessary complexity to deliver systems that are powerful yet intuitive."
-      },
-      "efficiency": {
-        "title": "Time-Saving Systems",
-        "description": "Every solution we build is designed to give you back time, allowing you to focus on what matters most."
+      "smallBusinesses": {
+        "title": "Small Businesses",
+        "description": "Get online quickly and professionally"
       }
     }
   },
   "process": {
-    "label": "Our Process",
-    "headline": "From problem to solution",
+    "label": "How It Works",
+    "headline": "From idea to live in 4 simple steps",
     "steps": {
       "understand": {
         "number": "01",
-        "title": "Understand",
-        "description": "We dive deep into your workflows, challenges, and goals to fully understand the problem before proposing solutions."
+        "title": "Tell Us About Your Business",
+        "description": "Share your business details, brand style, and what you want visitors to do. We'll handle the rest."
       },
       "design": {
         "number": "02",
-        "title": "Design",
-        "description": "We architect a solution that addresses your specific needs while remaining flexible enough to evolve with your business."
+        "title": "We Design Your Page",
+        "description": "Our team creates a clean, modern design that matches your brand and speaks to your customers."
       },
       "build": {
         "number": "03",
-        "title": "Build",
-        "description": "We develop your solution using modern technologies and best practices, with transparency at every step."
+        "title": "Review & Refine",
+        "description": "You review the draft and request any changes. We refine until you're completely satisfied."
       },
       "improve": {
         "number": "04",
-        "title": "Improve & Scale",
-        "description": "We continuously refine and optimize your systems based on real-world usage and your evolving needs."
+        "title": "Launch & Go Live",
+        "description": "Your landing page goes live and starts working for your business immediately."
       }
     }
   },
-  "vision": {
-    "label": "Our Vision",
-    "headline": "Beyond custom solutions",
-    "description": "Koda Labs is evolving from building custom solutions to creating our own products and platforms. We're building tools that solve common problems elegantly, making powerful technology accessible to more businesses and people."
+  "pricing": {
+    "label": "Pricing",
+    "headline": "Simple, transparent pricing",
+    "description": "Choose the plan that fits your needs. All plans include mobile-responsive design and fast delivery.",
+    "currency": {
+      "usd": "USD",
+      "gtq": "GTQ"
+    },
+    "perPage": "one-time",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect for simple businesses",
+        "features": [
+          "Single-page landing page",
+          "Mobile responsive design",
+          "Contact form integration",
+          "Basic SEO setup",
+          "48-hour delivery"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "description": "Most popular for local businesses",
+        "features": [
+          "Everything in Starter",
+          "Up to 3 sections",
+          "Social media links",
+          "Google Maps integration",
+          "24-hour delivery"
+        ],
+        "popular": "Most Popular"
+      },
+      "pro": {
+        "name": "Professional",
+        "description": "For businesses that want more",
+        "features": [
+          "Everything in Business",
+          "Up to 5 sections",
+          "Custom animations",
+          "Analytics dashboard",
+          "Priority support",
+          "Same-day delivery"
+        ]
+      }
+    },
+    "cta": "Get Started"
+  },
+  "addons": {
+    "label": "Add-ons",
+    "headline": "Enhance your landing page",
+    "description": "Optional extras to make your page even better.",
+    "items": {
+      "extraLanguage": {
+        "title": "Extra Language",
+        "description": "Add Spanish or another language version"
+      },
+      "menuPdf": {
+        "title": "Menu PDF Integration",
+        "description": "Upload and display your menu as a PDF"
+      },
+      "customSection": {
+        "title": "Custom Section",
+        "description": "Add an additional custom section"
+      },
+      "seoOptimization": {
+        "title": "SEO Optimization",
+        "description": "Advanced search engine optimization"
+      },
+      "analyticsSetup": {
+        "title": "Analytics Setup",
+        "description": "Google Analytics configuration"
+      }
+    },
+    "each": "each"
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Common questions",
+    "items": {
+      "speed": {
+        "question": "How fast can my landing page be ready?",
+        "answer": "Depending on your plan, your landing page can be ready in as little as 24 hours. Our Starter plan delivers in 48 hours, Business in 24 hours, and Professional offers same-day delivery."
+      },
+      "domain": {
+        "question": "Do I need to have a domain?",
+        "answer": "Not necessarily. We can help you purchase and set up a domain, or we can deploy your page on a subdomain if you prefer. We'll guide you through the options."
+      },
+      "changes": {
+        "question": "Can I request changes after delivery?",
+        "answer": "Yes! All plans include one round of revisions. If you need additional changes after that, we offer affordable update packages."
+      },
+      "languages": {
+        "question": "Can my website be in two languages?",
+        "answer": "Absolutely! You can add additional language versions as an add-on. This is especially popular for businesses serving both English and Spanish-speaking customers."
+      },
+      "hosting": {
+        "question": "Do you host the website?",
+        "answer": "Yes, we handle hosting on fast, reliable servers. Your landing page will load quickly and stay online 24/7. Hosting is included for the first year with all plans."
+      }
+    }
   },
   "cta": {
-    "headline": "Ready to simplify your work?",
-    "description": "Let's discuss how we can help you automate, streamline, and scale with the right technology.",
-    "button": "Start the Conversation"
+    "headline": "Ready to launch your landing page?",
+    "description": "Get your business online today. No complicated processes, no long wait times—just a professional page that converts visitors into customers.",
+    "button": "Get Started Now"
   },
   "footer": {
-    "tagline": "Practical technology for real problems.",
+    "tagline": "Professional landing pages, delivered fast.",
     "copyright": "All rights reserved.",
     "navigation": "Navigation",
     "connect": "Connect"

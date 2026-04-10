@@ -3,105 +3,106 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Koda Labs - Dark Premium Theme */
+/* Koda Labs - Light Premium Theme with Accent Color */
 :root {
-  /* Dark background - near black */
-  --background: oklch(0.09 0 0);
-  /* Bone white / off-white foreground */
-  --foreground: oklch(0.95 0.005 90);
+  /* Warm off-white background */
+  --background: oklch(0.97 0.005 90);
+  /* Dark text for readability */
+  --foreground: oklch(0.15 0 0);
   
-  /* Card - slightly lighter than background */
-  --card: oklch(0.16 0 0);
-  --card-foreground: oklch(0.95 0.005 90);
+  /* Pure white cards */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0 0);
   
   /* Popover */
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.95 0.005 90);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0 0);
   
-  /* Primary - bone white for CTAs */
-  --primary: oklch(0.95 0.005 90);
-  --primary-foreground: oklch(0.09 0 0);
+  /* Primary - dark for strong CTAs */
+  --primary: oklch(0.15 0 0);
+  --primary-foreground: oklch(0.98 0 0);
   
-  /* Secondary - dark gray */
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.95 0.005 90);
+  /* Secondary - light warm gray */
+  --secondary: oklch(0.94 0.005 90);
+  --secondary-foreground: oklch(0.15 0 0);
   
-  /* Muted - for subtle backgrounds and text */
-  --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.65 0 0);
+  /* Muted - subtle backgrounds and text */
+  --muted: oklch(0.94 0.005 90);
+  --muted-foreground: oklch(0.45 0 0);
   
-  /* Accent */
-  --accent: oklch(0.18 0 0);
-  --accent-foreground: oklch(0.95 0.005 90);
+  /* Accent - Modern vibrant blue */
+  --accent: oklch(0.5 0.2 264);
+  --accent-foreground: oklch(0.98 0 0);
   
   /* Destructive */
   --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(0.95 0 0);
+  --destructive-foreground: oklch(0.98 0 0);
   
-  /* Border - subtle dark gray */
-  --border: oklch(0.22 0 0);
-  --input: oklch(0.22 0 0);
-  --ring: oklch(0.65 0 0);
+  /* Border - subtle warm gray */
+  --border: oklch(0.90 0.005 90);
+  --input: oklch(0.90 0.005 90);
+  --ring: oklch(0.45 0 0);
   
   /* Charts */
-  --chart-1: oklch(0.65 0 0);
-  --chart-2: oklch(0.55 0 0);
-  --chart-3: oklch(0.45 0 0);
-  --chart-4: oklch(0.75 0 0);
-  --chart-5: oklch(0.85 0 0);
+  --chart-1: oklch(0.5 0.2 264);
+  --chart-2: oklch(0.45 0 0);
+  --chart-3: oklch(0.55 0 0);
+  --chart-4: oklch(0.25 0 0);
+  --chart-5: oklch(0.65 0 0);
   
   --radius: 0.5rem;
   
   /* Sidebar */
-  --sidebar: oklch(0.09 0 0);
-  --sidebar-foreground: oklch(0.95 0.005 90);
-  --sidebar-primary: oklch(0.95 0.005 90);
-  --sidebar-primary-foreground: oklch(0.09 0 0);
-  --sidebar-accent: oklch(0.15 0 0);
-  --sidebar-accent-foreground: oklch(0.95 0.005 90);
-  --sidebar-border: oklch(0.22 0 0);
-  --sidebar-ring: oklch(0.65 0 0);
+  --sidebar: oklch(0.97 0.005 90);
+  --sidebar-foreground: oklch(0.15 0 0);
+  --sidebar-primary: oklch(0.15 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.94 0.005 90);
+  --sidebar-accent-foreground: oklch(0.15 0 0);
+  --sidebar-border: oklch(0.90 0.005 90);
+  --sidebar-ring: oklch(0.45 0 0);
 }
 
-/* No light mode - Koda Labs is dark-only */
+/* Dark mode (not used but kept for compatibility) */
 .dark {
-  --background: oklch(0.09 0 0);
-  --foreground: oklch(0.95 0.005 90);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.95 0.005 90);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.95 0.005 90);
-  --primary: oklch(0.95 0.005 90);
-  --primary-foreground: oklch(0.09 0 0);
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.95 0.005 90);
-  --muted: oklch(0.15 0 0);
+  --background: oklch(0.15 0 0);
+  --foreground: oklch(0.97 0 0);
+  --card: oklch(0.18 0 0);
+  --card-foreground: oklch(0.97 0 0);
+  --popover: oklch(0.18 0 0);
+  --popover-foreground: oklch(0.97 0 0);
+  --primary: oklch(0.97 0 0);
+  --primary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.25 0 0);
+  --secondary-foreground: oklch(0.97 0 0);
+  --muted: oklch(0.25 0 0);
   --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.18 0 0);
-  --accent-foreground: oklch(0.95 0.005 90);
+  --accent: oklch(0.25 0 0);
+  --accent-foreground: oklch(0.97 0 0);
   --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.22 0 0);
-  --input: oklch(0.22 0 0);
-  --ring: oklch(0.65 0 0);
+  --destructive-foreground: oklch(0.97 0 0);
+  --border: oklch(0.28 0 0);
+  --input: oklch(0.28 0 0);
+  --ring: oklch(0.55 0 0);
   --chart-1: oklch(0.65 0 0);
   --chart-2: oklch(0.55 0 0);
   --chart-3: oklch(0.45 0 0);
   --chart-4: oklch(0.75 0 0);
   --chart-5: oklch(0.85 0 0);
-  --sidebar: oklch(0.09 0 0);
-  --sidebar-foreground: oklch(0.95 0.005 90);
-  --sidebar-primary: oklch(0.95 0.005 90);
-  --sidebar-primary-foreground: oklch(0.09 0 0);
-  --sidebar-accent: oklch(0.15 0 0);
-  --sidebar-accent-foreground: oklch(0.95 0.005 90);
-  --sidebar-border: oklch(0.22 0 0);
-  --sidebar-ring: oklch(0.65 0 0);
+  --sidebar: oklch(0.15 0 0);
+  --sidebar-foreground: oklch(0.97 0 0);
+  --sidebar-primary: oklch(0.97 0 0);
+  --sidebar-primary-foreground: oklch(0.15 0 0);
+  --sidebar-accent: oklch(0.25 0 0);
+  --sidebar-accent-foreground: oklch(0.97 0 0);
+  --sidebar-border: oklch(0.28 0 0);
+  --sidebar-ring: oklch(0.55 0 0);
 }
 
 @theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Playfair Display Fallback', Georgia, serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -147,4 +148,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes glow-accent {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(80, 102, 255, 0.1); }
+  50% { box-shadow: 0 0 0 20px rgba(80, 102, 255, 0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }

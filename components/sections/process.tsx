@@ -11,7 +11,7 @@ export function Process() {
   const { ref: stepsRef, isVisible: stepsVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.1 })
 
   return (
-    <section id="process" className="py-24 lg:py-32 bg-card border-t border-border">
+    <section id="process" className="py-24 lg:py-32 bg-secondary/50 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div 
@@ -41,14 +41,17 @@ export function Process() {
               className="relative"
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              {/* Connector line for desktop */}
+              {/* Connector line for desktop with accent glow */}
               {index < processKeys.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-border -translate-y-1/2 z-0" />
+                <>
+                  <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-border to-transparent -translate-y-1/2 z-0" />
+                  <div className="hidden lg:block absolute top-8 left-full w-12 h-px bg-accent/40 -translate-y-1/2 z-0" />
+                </>
               )}
               
               <div className="relative z-10">
-                {/* Step Number */}
-                <div className="text-5xl lg:text-6xl font-bold text-secondary mb-4">
+                {/* Step Number with accent */}
+                <div className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-accent/60 mb-4">
                   {t(`process.steps.${key}.number`)}
                 </div>
                 

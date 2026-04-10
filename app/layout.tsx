@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { I18nProvider } from '@/lib/i18n'
 import './globals.css'
@@ -9,15 +9,20 @@ const inter = Inter({
   variable: "--font-inter"
 })
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair"
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.usekodalabs.com'),
   title: {
-    default: 'Koda Labs | Software that removes friction',
+    default: 'Koda Labs | Launch your landing page in hours, not weeks',
     template: '%s | Koda Labs'
   },
-  description: 'Koda Labs builds software, automation, and digital tools that help people and businesses simplify workflows, save time, and scale with better systems.',
+  description: 'Modern landing pages designed to convert visitors into clients. Get your business online fast with a professional landing page built in hours.',
   generator: 'Next.js',
-  keywords: ['software development', 'automation', 'AI solutions', 'SaaS', 'digital platforms', 'custom software', 'business automation'],
+  keywords: ['landing pages', 'web design', 'business websites', 'small business', 'restaurant websites', 'local business', 'landing page builder'],
   authors: [{ name: 'Koda Labs' }],
   creator: 'Koda Labs',
   publisher: 'Koda Labs',
@@ -44,13 +49,13 @@ export const metadata: Metadata = {
     alternateLocale: 'es_ES',
     url: 'https://www.usekodalabs.com',
     siteName: 'Koda Labs',
-    title: 'Koda Labs | Software that removes friction',
-    description: 'We turn complex processes into simple systems. Build software, automation, and digital tools that simplify workflows and scale your business.',
+    title: 'Koda Labs | Launch your landing page in hours, not weeks',
+    description: 'Modern landing pages designed to convert visitors into clients. Get your business online fast with a professional landing page.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Koda Labs | Software that removes friction',
-    description: 'We turn complex processes into simple systems. Build software, automation, and digital tools that simplify workflows and scale your business.',
+    title: 'Koda Labs | Launch your landing page in hours, not weeks',
+    description: 'Modern landing pages designed to convert visitors into clients. Get your business online fast with a professional landing page.',
     creator: '@kodalabs',
   },
   alternates: {
@@ -63,7 +68,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#171717',
+  themeColor: '#F7F6F3',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -75,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
         <I18nProvider>
           {children}

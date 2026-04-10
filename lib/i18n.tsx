@@ -8,12 +8,13 @@ type Locale = "en" | "es"
 
 const translations = { en, es } as const
 
-type TranslationValue = string | { [key: string]: TranslationValue }
+type TranslationValue = string | string[] | { [key: string]: TranslationValue }
 
 interface I18nContextType {
   locale: Locale
   setLocale: (locale: Locale) => void
   t: (key: string) => string
+  tArray: (key: string) => string[]
 }
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined)
@@ -27,7 +28,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       let value: TranslationValue = translations[locale]
 
       for (const k of keys) {
-        if (typeof value === "object" && value !== null && k in value) {
+        if (typeof value === "object" && value !== null && !Array.isArray(value) && k in value) {
           value = value[k as keyof typeof value]
         } else {
           return key
@@ -39,8 +40,26 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     [locale]
   )
 
+  const tArray = useCallback(
+    (key: string): string[] => {
+      const keys = key.split(".")
+      let value: TranslationValue = translations[locale]
+
+      for (const k of keys) {
+        if (typeof value === "object" && value !== null && !Array.isArray(value) && k in value) {
+          value = value[k as keyof typeof value]
+        } else {
+          return []
+        }
+      }
+
+      return Array.isArray(value) ? value : []
+    },
+    [locale]
+  )
+
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t }}>
+    <I18nContext.Provider value={{ locale, setLocale, t, tArray }}>
       {children}
     </I18nContext.Provider>
   )

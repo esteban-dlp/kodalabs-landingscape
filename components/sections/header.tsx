@@ -12,9 +12,9 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: "#services", label: t("nav.services") },
+    { href: "#perfect-for", label: t("nav.perfectFor") },
     { href: "#process", label: t("nav.process") },
-    { href: "#about", label: t("nav.about") },
+    { href: "#pricing", label: t("nav.pricing") },
   ]
 
   return (
@@ -24,11 +24,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/icon.svg"
+              src="/logo.svg"
               alt="Koda Labs"
               width={36}
               height={36}
-              className="w-8 h-8 lg:w-9 lg:h-9"
+              className="w-8 h-8 lg:w-9 lg:h-9 drop-shadow-md"
             />
             <span className="font-semibold text-lg text-foreground">
               Koda Labs

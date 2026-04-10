@@ -11,7 +11,7 @@ export function CTA() {
   const { ref, isVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.3 })
 
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-card border-t border-border">
+    <section id="contact" className="py-24 lg:py-32 border-t border-border">
       <div 
         ref={ref}
         className={`max-w-7xl mx-auto px-6 lg:px-8 transition-all duration-1000 ease-out ${

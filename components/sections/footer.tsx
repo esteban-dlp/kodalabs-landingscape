@@ -101,6 +101,7 @@ export function Footer() {
             &copy; {currentYear} Koda Labs. {t("footer.copyright")}
           </p>
         </div>
+        
       </div>
     </footer>
   )

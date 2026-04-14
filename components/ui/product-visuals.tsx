@@ -1,5 +1,7 @@
 "use client"
 
+import { useParallax } from "@/hooks/use-parallax"
+
 // Mini chart line component for analytics visualization
 export function MiniLineChart({ className = "" }: { className?: string }) {
   return (
@@ -86,66 +88,93 @@ export function MetricCard({
 
 // Hero landing page performance mockup
 export function HeroDashboardMockup() {
+  const chipA = useParallax<HTMLDivElement>(-0.05)
+  const chipB = useParallax<HTMLDivElement>(0.04)
+  const chipC = useParallax<HTMLDivElement>(-0.03)
+
   return (
-    <div className="relative w-full max-w-4xl mx-auto mt-16 lg:mt-24">
-      {/* Main performance card */}
-      <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 lg:p-6 shadow-2xl shadow-foreground/5">
+    <div className="relative w-full max-w-md lg:max-w-none mx-auto lg:mx-0">
+      {/* Subtle stacked plate behind */}
+      <div aria-hidden className="absolute inset-0 rounded-2xl bg-card/60 border border-border translate-x-3 translate-y-3 rotate-[2deg]" />
+
+      {/* Main performance card - slight tilt */}
+      <div className="relative bg-card border border-border rounded-2xl p-5 lg:p-6 shadow-2xl shadow-foreground/10 -rotate-[1.5deg] hover:rotate-0 transition-transform duration-500">
+        {/* Browser chrome */}
+        <div className="flex items-center gap-1.5 mb-4">
+          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+          <div className="ml-3 flex-1 h-5 rounded bg-secondary/70 text-[10px] text-muted-foreground flex items-center px-2 font-mono truncate">
+            yourbrand.com
+          </div>
+        </div>
+
         {/* Performance metrics */}
-        <div className="grid grid-cols-3 gap-3 lg:gap-4 mb-4">
-          <MetricCard label="Traffic Growth" value="247%" trend="+24%" />
-          <MetricCard label="Conversion Rate" value="8.2%" trend="+18%" />
-          <MetricCard label="Avg. Session" value="3m 42s" trend="+32%" />
+        <div className="grid grid-cols-3 gap-2 mb-4">
+          <MetricCard label="Traffic" value="247%" trend="+24%" />
+          <MetricCard label="Conv." value="8.2%" trend="+18%" />
+          <MetricCard label="Session" value="3m 42s" trend="+32%" />
         </div>
 
         {/* Chart area */}
         <div className="bg-secondary/50 rounded-lg p-4">
           <div className="flex items-center justify-between mb-3">
-            <div className="text-xs text-muted-foreground">Landing Page Performance</div>
-            <div className="flex gap-2">
-              <div className="h-1.5 w-8 bg-accent rounded" />
-              <div className="h-1.5 w-8 bg-muted rounded" />
+            <div className="text-[11px] text-muted-foreground">Landing Page Performance</div>
+            <div className="flex gap-1.5">
+              <div className="h-1 w-6 bg-accent rounded" />
+              <div className="h-1 w-6 bg-muted rounded" />
             </div>
           </div>
-          <div className="h-16 text-accent">
+          <div className="h-20 text-accent">
             <MiniLineChart />
           </div>
         </div>
       </div>
 
-      {/* Floating cards - Example results */}
-      <div className="absolute -left-4 lg:-left-12 top-1/4 bg-card border border-border rounded-lg p-3 shadow-lg animate-[float_6s_ease-in-out_infinite]">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-            <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-            </svg>
-          </div>
-          <div>
-            <div className="text-[10px] text-muted-foreground">Traffic Growth</div>
-            <div className="text-sm font-semibold text-foreground">+247%</div>
-          </div>
+      {/* Floating chip: overlaps left into headline column on lg+ */}
+      <div
+        ref={chipA.ref}
+        style={{ transform: `translateY(${chipA.offset}px)` }}
+        className="hidden sm:flex absolute -left-8 lg:-left-20 top-[18%] bg-card border border-border rounded-xl p-3 shadow-xl shadow-foreground/10 items-center gap-2.5 animate-[float_6s_ease-in-out_infinite]"
+      >
+        <div className="w-9 h-9 rounded-lg bg-accent/15 flex items-center justify-center">
+          <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+        </div>
+        <div>
+          <div className="text-[10px] text-muted-foreground uppercase tracking-wider">Traffic</div>
+          <div className="text-sm font-semibold text-foreground">+247%</div>
         </div>
       </div>
 
-      <div className="absolute -right-4 lg:-right-8 top-1/3 bg-card border border-border rounded-lg p-3 shadow-lg animate-[float_6s_ease-in-out_infinite_1s]">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
-            <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <div className="text-[10px] text-muted-foreground">Page Speed</div>
-            <div className="text-sm font-semibold text-foreground">0.8s Load</div>
-          </div>
+      {/* Floating chip: right */}
+      <div
+        ref={chipB.ref}
+        style={{ transform: `translateY(${chipB.offset}px)` }}
+        className="hidden sm:flex absolute -right-4 lg:-right-8 top-[55%] bg-card border border-border rounded-xl p-3 shadow-xl shadow-foreground/10 items-center gap-2.5 animate-[float_6s_ease-in-out_infinite_1.4s]"
+      >
+        <div className="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center">
+          <svg className="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <div>
+          <div className="text-[10px] text-muted-foreground uppercase tracking-wider">Load</div>
+          <div className="text-sm font-semibold text-foreground">0.8s</div>
         </div>
       </div>
 
-      <div className="absolute right-8 lg:right-16 -bottom-6 bg-card border border-border rounded-lg p-3 shadow-lg animate-[float_6s_ease-in-out_infinite_2s]">
-        <div className="h-8 w-20 text-accent/80">
+      {/* Floating chip: bottom */}
+      <div
+        ref={chipC.ref}
+        style={{ transform: `translateY(${chipC.offset}px)` }}
+        className="hidden sm:block absolute right-10 lg:right-12 -bottom-6 bg-card border border-border rounded-xl p-3 shadow-xl shadow-foreground/10 animate-[float_6s_ease-in-out_infinite_2.2s]"
+      >
+        <div className="h-8 w-24 text-accent/80">
           <MiniBarChart />
         </div>
-        <div className="text-[10px] text-muted-foreground mt-1">Visitor Engagement</div>
+        <div className="text-[10px] text-muted-foreground mt-1 uppercase tracking-wider">Engagement</div>
       </div>
     </div>
   )

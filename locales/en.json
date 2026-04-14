@@ -7,16 +7,27 @@
   },
   "hero": {
     "tagline": "Landing Pages for Local Businesses",
+    "status": "Now booking April launches",
     "headline": "Launch your landing page in",
     "headlineAccent": "hours, not weeks",
     "description": "Modern landing pages designed to convert visitors into clients. Get your business online fast with a professional page that looks great on any device.",
     "cta": "See Pricing",
-    "secondaryCta": "How It Works"
+    "secondaryCta": "How It Works",
+    "trust": {
+      "speed": "0.8s load time",
+      "mobile": "Mobile-first by default",
+      "seo": "SEO built in",
+      "region": "Guatemala & U.S."
+    }
   },
   "whatWeDo": {
     "label": "What We Do",
-    "headline": "Professional landing pages, delivered fast",
-    "description": "We build clean, modern landing pages for businesses that want to look professional online without the hassle of traditional web development. No complicated processes, no long wait times—just a great page that works."
+    "headlineLead": "Professional landing pages,",
+    "headlineAccent": "delivered fast.",
+    "description": "We build clean, modern landing pages for businesses that want to look professional online without the hassle of traditional web development. No complicated processes, no long wait times—just a great page that works.",
+    "statNumber": "24h",
+    "statLabel": "Average delivery",
+    "statCaption": "From brief to live in a single working day."
   },
   "perfectFor": {
     "label": "Perfect For",
@@ -47,6 +58,22 @@
         "title": "Small Businesses",
         "description": "Get online quickly and professionally"
       }
+    }
+  },
+  "credibility": {
+    "label": "Built on solid ground",
+    "items": {
+      "fastDelivery": "Fast delivery",
+      "customBuilt": "Custom-built design",
+      "mobileFirst": "Mobile-first",
+      "clearProcess": "Clear process",
+      "localFriendly": "Local-business friendly",
+      "conversionFocused": "Conversion-focused",
+      "bilingualReady": "Bilingual-ready",
+      "modernStack": "Modern stack",
+      "polishedUi": "Polished UI",
+      "scalableStructure": "Scalable structure",
+      "easyMaintain": "Easy to maintain"
     }
   },
   "process": {
@@ -154,6 +181,8 @@
   "faq": {
     "label": "FAQ",
     "headline": "Common questions",
+    "subCopy": "Everything you need to know before getting started. If you can't find the answer here, send us a message.",
+    "contactCta": "Ask a question",
     "items": {
       "speed": {
         "question": "How fast can my landing page be ready?",
@@ -179,8 +208,12 @@
   },
   "cta": {
     "headline": "Ready to launch your landing page?",
+    "headlineLead": "Ready to",
+    "headlineAccent": "launch",
+    "headlineTail": "your landing page?",
     "description": "Get your business online today. No complicated processes, no long wait times—just a professional page that converts visitors into customers.",
-    "button": "Get Started Now"
+    "button": "Get Started Now",
+    "sideNote": "Typically replies within 4 hours"
   },
   "footer": {
     "tagline": "Professional landing pages, delivered fast.",

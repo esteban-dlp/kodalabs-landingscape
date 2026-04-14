@@ -7,16 +7,27 @@
   },
   "hero": {
     "tagline": "Landing Pages para Negocios Locales",
+    "status": "Reservando lanzamientos de abril",
     "headline": "Lanza tu landing page en",
     "headlineAccent": "horas, no semanas",
     "description": "Landing pages modernas diseñadas para convertir visitantes en clientes. Pon tu negocio en línea rápidamente con una página profesional que se ve genial en cualquier dispositivo.",
     "cta": "Ver Precios",
-    "secondaryCta": "Cómo Funciona"
+    "secondaryCta": "Cómo Funciona",
+    "trust": {
+      "speed": "Carga en 0.8s",
+      "mobile": "Móvil primero",
+      "seo": "SEO integrado",
+      "region": "Guatemala y EE.UU."
+    }
   },
   "whatWeDo": {
     "label": "Lo Que Hacemos",
-    "headline": "Landing pages profesionales, entregadas rápido",
-    "description": "Construimos landing pages limpias y modernas para negocios que quieren verse profesionales en línea sin la complejidad del desarrollo web tradicional. Sin procesos complicados, sin largos tiempos de espera—solo una página genial que funciona."
+    "headlineLead": "Landing pages profesionales,",
+    "headlineAccent": "entregadas rápido.",
+    "description": "Construimos landing pages limpias y modernas para negocios que quieren verse profesionales en línea sin la complejidad del desarrollo web tradicional. Sin procesos complicados, sin largos tiempos de espera—solo una página genial que funciona.",
+    "statNumber": "24h",
+    "statLabel": "Entrega promedio",
+    "statCaption": "De brief a publicado en un día laboral."
   },
   "perfectFor": {
     "label": "Perfecto Para",
@@ -47,6 +58,22 @@
         "title": "Pequeños Negocios",
         "description": "Ponte en línea rápida y profesionalmente"
       }
+    }
+  },
+  "credibility": {
+    "label": "Bases sólidas",
+    "items": {
+      "fastDelivery": "Entrega rápida",
+      "customBuilt": "Diseño a medida",
+      "mobileFirst": "Mobile-first",
+      "clearProcess": "Proceso claro",
+      "localFriendly": "Pensado para negocios locales",
+      "conversionFocused": "Enfocado en conversión",
+      "bilingualReady": "Listo para bilingüe",
+      "modernStack": "Stack moderno",
+      "polishedUi": "UI pulida",
+      "scalableStructure": "Estructura escalable",
+      "easyMaintain": "Fácil de mantener"
     }
   },
   "process": {
@@ -154,6 +181,8 @@
   "faq": {
     "label": "Preguntas Frecuentes",
     "headline": "Preguntas comunes",
+    "subCopy": "Todo lo que necesitas saber antes de comenzar. Si no encuentras la respuesta aquí, escríbenos.",
+    "contactCta": "Haznos una pregunta",
     "items": {
       "speed": {
         "question": "¿Qué tan rápido puede estar lista mi landing page?",
@@ -179,8 +208,12 @@
   },
   "cta": {
     "headline": "¿Listo para lanzar tu landing page?",
+    "headlineLead": "¿Listo para",
+    "headlineAccent": "lanzar",
+    "headlineTail": "tu landing page?",
     "description": "Pon tu negocio en línea hoy. Sin procesos complicados, sin largos tiempos de espera—solo una página profesional que convierte visitantes en clientes.",
-    "button": "Comenzar Ahora"
+    "button": "Comenzar Ahora",
+    "sideNote": "Respondemos en menos de 4 horas"
   },
   "footer": {
     "tagline": "Landing pages profesionales, entregadas rápido.",

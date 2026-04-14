@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import { useI18n } from "@/lib/i18n"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { pricingConfig, type Currency } from "@/config/pricing.config"
-import { Plus } from "lucide-react"
 
 export function AddOns() {
   const { t } = useI18n()
@@ -12,7 +11,6 @@ export function AddOns() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.3 })
   const { ref: listRef, isVisible: listVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.1 })
 
-  // Sync with pricing section currency
   useEffect(() => {
     const checkCurrency = () => {
       const saved = localStorage.getItem("koda-currency") as Currency | null
@@ -20,15 +18,9 @@ export function AddOns() {
         setCurrency(saved)
       }
     }
-    
     checkCurrency()
-    
-    // Listen for storage changes
     window.addEventListener("storage", checkCurrency)
-    
-    // Also check periodically in case user switches on same page
     const interval = setInterval(checkCurrency, 500)
-    
     return () => {
       window.removeEventListener("storage", checkCurrency)
       clearInterval(interval)
@@ -37,7 +29,6 @@ export function AddOns() {
 
   const formatPrice = (priceUsd: number, addonId: string) => {
     if (currency === "gtq") {
-      // Use psychological pricing for GTQ
       let priceGtq: number
       if (addonId === "extraLanguage") priceGtq = pricingConfig.pricesGtq.addons.extraLanguage
       else if (addonId === "menuPdf") priceGtq = pricingConfig.pricesGtq.addons.menuPdf
@@ -51,52 +42,62 @@ export function AddOns() {
   }
 
   return (
-    <section id="addons" className="py-24 lg:py-32 border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="addons" className="py-28 lg:py-36">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div 
+        <div
           ref={headerRef}
-          className={`max-w-3xl mb-12 lg:mb-16 transition-all duration-1000 ease-out ${
+          className={`grid lg:grid-cols-12 gap-8 mb-14 lg:mb-20 transition-all duration-1000 ease-out ${
             headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm font-medium tracking-widest text-muted-foreground uppercase mb-4">
-            {t("addons.label")}
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground mb-4 text-balance">
-            {t("addons.headline")}
-          </h2>
-          <p className="text-lg text-muted-foreground text-pretty">
-            {t("addons.description")}
-          </p>
+          <div className="lg:col-span-6">
+            <p className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-5">
+              <span className="inline-block w-6 h-px bg-accent align-middle mr-3" />
+              {t("addons.label")}
+            </p>
+            <h2 className="text-3xl lg:text-5xl font-bold tracking-tight text-foreground leading-[1.08] text-balance">
+              {t("addons.headline")}
+            </h2>
+          </div>
+          <div className="lg:col-span-5 lg:col-start-8 flex items-end">
+            <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
+              {t("addons.description")}
+            </p>
+          </div>
         </div>
 
-        {/* Add-ons List */}
-        <div 
+        {/* Editorial list */}
+        <div
           ref={listRef}
-          className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-4 transition-all duration-1000 ease-out delay-200 ${
+          className={`border-t border-border transition-all duration-1000 ease-out delay-200 ${
             listVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           {pricingConfig.addons.map((addon, index) => (
             <div
               key={addon.id}
-              className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:border-foreground/20 transition-all duration-300"
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 80}ms` }}
+              className="group grid grid-cols-12 gap-4 items-baseline py-6 lg:py-7 border-b border-border transition-colors hover:bg-secondary/40"
             >
-              <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
-                <Plus className="w-5 h-5 text-muted-foreground" />
+              <div className="col-span-1 text-xs font-mono text-muted-foreground/60 tabular">
+                {String(index + 1).padStart(2, "0")}
               </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-medium text-foreground truncate">
-                  {t(`addons.items.${addon.id}.title`)}
+              <div className="col-span-11 sm:col-span-5">
+                <h3 className="text-lg lg:text-xl font-semibold text-foreground tracking-tight">
+                  <span className="relative inline-block">
+                    {t(`addons.items.${addon.id}.title`)}
+                    <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-accent group-hover:w-full transition-all duration-500" />
+                  </span>
                 </h3>
-                <p className="text-sm text-muted-foreground truncate">
-                  {t(`addons.items.${addon.id}.description`)}
-                </p>
               </div>
-              <div className="text-right flex-shrink-0">
-                <span className="font-semibold text-foreground">{formatPrice(addon.price, addon.id)}</span>
+              <div className="col-span-8 sm:col-span-4 text-sm text-muted-foreground leading-relaxed">
+                {t(`addons.items.${addon.id}.description`)}
+              </div>
+              <div className="col-span-4 sm:col-span-2 text-right">
+                <span className="text-base lg:text-lg font-semibold text-foreground tabular">
+                  {formatPrice(addon.price, addon.id)}
+                </span>
                 <span className="text-xs text-muted-foreground block">{t("addons.each")}</span>
               </div>
             </div>

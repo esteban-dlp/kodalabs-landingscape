@@ -1,5 +1,5 @@
 # CLAUDE.md
-Read CLAUDE.md and the project skills before making any changes.
+Read this CLAUDE.md and any relevant local project skills before making changes.
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Token Efficient Rules
@@ -65,3 +65,89 @@ Shadcn/ui components with Radix UI primitives and Tailwind. Do not edit these un
 ### Styling
 
 Tailwind CSS v4 with CSS variables for theming. Global CSS is in `app/globals.css` and `styles/globals.css`. Fonts: Inter (`--font-inter`) and Playfair Display (`--font-playfair`), loaded via `next/font/google` in `layout.tsx`.
+
+## Installed Skills
+
+This repository includes local Claude skills inside `.claude/skills/`.
+Before making design or layout changes, check relevant installed skills and use them when helpful.
+
+Currently installed skill:
+- UI/UX Pro Max Design
+
+## Skill Usage Rules
+
+Use UI/UX Pro Max Design when working on:
+- landing page layout improvements
+- visual hierarchy
+- spacing and section rhythm
+- typography pairing and scale
+- CTA clarity and placement
+- responsive polish
+- premium visual refinement
+- conversion-focused UI improvements
+
+Do not use the skill to:
+- overwrite the business positioning
+- change the offer structure without reason
+- introduce trendy but unnecessary visual effects
+- make the site feel generic, overdesigned, or template-like
+- add complexity that hurts clarity or performance
+
+## Priority Order
+
+When making decisions, follow this order:
+1. Explicit user instructions
+2. This CLAUDE.md
+3. Existing codebase patterns
+4. Installed skills recommendations
+
+Skills should support the project, not override it.
+
+## Design Direction
+
+Koda Labs should feel:
+- modern
+- premium
+- clear
+- structured
+- conversion-focused
+- trustworthy
+
+Avoid making it feel:
+- too startup-generic
+- too futuristic
+- overly artistic
+- crowded
+- flashy
+- filled with unnecessary gradients, effects, or motion
+
+## Landing Page Standards
+
+When editing sections of the landing page:
+- preserve strong readability
+- prioritize clear CTA flow
+- keep copy easy to scan
+- maintain consistent spacing between sections
+- avoid oversized blocks with weak hierarchy
+- keep mobile experience as important as desktop
+- prefer subtle polish over dramatic redesigns
+
+## Visual Rules
+
+- Use neutral tones first
+- Accent colors should be minimal and intentional
+- Keep shadows subtle
+- Use rounded corners consistently, not excessively
+- Maintain a clean and balanced layout
+- Animations should support hierarchy, never distract
+- Every section should feel purposeful, not decorative
+
+## Implementation Rules for Design Changes
+
+When applying design improvements:
+- prefer small targeted edits over full rewrites
+- preserve reusable structure
+- avoid unnecessary dependencies
+- do not break i18n
+- do not hardcode copy that belongs in locale files
+- keep performance in mind, especially for static export

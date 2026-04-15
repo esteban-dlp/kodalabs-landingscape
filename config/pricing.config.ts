@@ -5,35 +5,35 @@ export const pricingConfig = {
   },
   exchangeRate: 7.8, // 1 USD = 7.8 GTQ
   pricesGtq: {
-    // Main plans with psychological pricing (round to next hundred, subtract 1)
+    // Main plans with psychological pricing
     plans: {
-      starter: 799,      // 99 USD × 7.8 = 772 → 799 Q
-      business: 1599,    // 199 USD × 7.8 = 1552 → 1599 Q
-      pro: 3199,         // 399 USD × 7.8 = 3112 → 3199 Q
+      starter: 1199,    // 149 USD × 7.8 = 1162.2 → 1199 Q
+      business: 2399,   // 299 USD × 7.8 = 2332.2 → 2399 Q
+      pro: 4799,        // 599 USD × 7.8 = 4672.2 → 4799 Q
     },
-    // Add-ons with psychological pricing (round to next ten, subtract 1)
+    // Add-ons with psychological pricing
     addons: {
-      extraLanguage: 389,       // 49 USD × 7.8 = 382 → 389 Q
-      menuPdf: 229,             // 29 USD × 7.8 = 226 → 229 Q
-      customSection: 389,       // 49 USD × 7.8 = 382 → 389 Q
-      seoOptimization: 619,     // 79 USD × 7.8 = 616 → 619 Q
-      analyticsSetup: 389,      // 49 USD × 7.8 = 382 → 389 Q
+      extraLanguage: 389,       // 49 USD × 7.8 = 382.2 → 389 Q
+      menuPdf: 229,             // 29 USD × 7.8 = 226.2 → 229 Q
+      customSection: 389,       // 49 USD × 7.8 = 382.2 → 389 Q
+      seoOptimization: 619,     // 79 USD × 7.8 = 616.2 → 619 Q
+      analyticsSetup: 389,      // 49 USD × 7.8 = 382.2 → 389 Q
     },
   },
   plans: [
     {
       id: "starter",
-      price: 99,
+      price: 149,
       popular: false,
     },
     {
       id: "business",
-      price: 199,
+      price: 299,
       popular: true,
     },
     {
       id: "pro",
-      price: 399,
+      price: 599,
       popular: false,
     },
   ],

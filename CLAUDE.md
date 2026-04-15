@@ -1,4 +1,5 @@
 # CLAUDE.md
+
 Read this CLAUDE.md and any relevant local project skills before making changes.
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 

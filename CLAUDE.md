@@ -152,3 +152,14 @@ When applying design improvements:
 - do not break i18n
 - do not hardcode copy that belongs in locale files
 - keep performance in mind, especially for static export
+
+## Mandatory git rule
+
+Every time you finish a completed and functional change, you must:
+- commit the changes
+- push them to the current repository branch
+- include a clear commit message
+- tell me what commit message you used
+
+Do not skip this unless I explicitly say not to commit or not to push.
+Do not push if the code is knowingly broken.

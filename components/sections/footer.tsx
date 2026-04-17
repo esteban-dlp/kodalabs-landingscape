@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { useI18n } from "@/lib/i18n"
+import Image from "next/image";
+import Link from "next/link";
+import { useI18n } from "@/lib/i18n";
 
 export function Footer() {
-  const { t } = useI18n()
-  const currentYear = new Date().getFullYear()
+  const { t } = useI18n();
+  const currentYear = new Date().getFullYear();
 
   const navLinks = [
     { href: "#perfect-for", label: t("nav.perfectFor") },
     { href: "#process", label: t("nav.process") },
     { href: "#pricing", label: t("nav.pricing") },
     { href: "#contact", label: t("nav.contact") },
-  ]
+  ];
 
   return (
     <footer className="py-12 lg:py-16 border-t border-border">
@@ -96,13 +96,33 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-border">
+        <div className="mt-12 flex items-center justify-between border-t border-border pt-8">
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} Koda Labs. {t("footer.copyright")}
           </p>
+
+          <div className="flex items-center gap-6">
+            <a
+              href="/refund"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Refund Policy
+            </a>
+            <a
+              href="/privacy"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Terms of Service
+            </a>
+          </div>
         </div>
-        
       </div>
     </footer>
-  )
+  );
 }
